@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Summer Colloquium Research Foundation<br></h1>
+        <div class="subtitle">
+            <p>
+                Daegeun Kim
+            </p>
+        </div>
+    </header>
+            <button onclick="location.href='index.html'">Research Overview</button>
+            <button onclick="location.href='subpage1.html'">Historical Reference</button>
+            <button onclick="location.href='subpage2.html'">Potential Tools</button>
+            <button onclick="location.href='subpage3.html'">Existing Projects</button>
+    <main>
+        <div class="title">Existing Projects</div>
+            <div class="image">
+                <img src="giscopilot.png" width="870" height="500">
+            </div>
+            <div class="reference-text">
+                <b>1. GIS Copilot</b><br>
+                LLM directly into QGIS<br>
+                <br>
+                Natural-language to GIS operations: Users can ask questions like 
+                “create 500-m buffers around subway stations and intersect with zoning areas” 
+                and Copilot builds and runs the corresponding geoprocessing steps.<br>
+                <br>
+                valuated on 100+ spatial tasks: handles basic (single-tool), 
+                intermediate (guided multi-step), and some advanced tasks. 
+                Performs well for simpler workflows; advanced autonomy still evolving.<br>
+                <br>
+                Integrated plugin: Built as a QGIS plugin, 
+                it supports both vector and raster analysis and links with external libraries like
+                GeoPandas and Seaborn for extended analytics.
+            </div>
+            <div class="image">
+                <img src="NvidiaEarth2.png" width="870" height="500">
+            </div>
+            <div class="reference-text">
+                <b>2. Nvidia Earth-2</b><br>
+                Planet-scale Earth digital twin platform<br>
+                <br>
+                CorrDiff: A diffusion-based generative AI model that downscales traditional 
+                forecasts—from coarse (~25 km) to fine (~2 km) resolution—providing localized 
+                weather predictions such as wind, precipitation, and temperature.<br>
+                <br>
+                cBottle ("Climate in a Bottle"): A generative foundation model capable of 
+                simulating climate conditions at ~5 km resolution, compressing vast volumes of 
+                climate data for efficient storage and inference.<br>
+                <br>
+                Earth2Studio & PhysicsNeMo: GPU-accelerated frameworks and inference microservices 
+                built for model training, simulation, and custom deployment via the Earth-2 stack.<br>
+                <br>
+                Omniverse Blueprint for Earth-2 Weather Analytics: An open reference architecture 
+                with modules like Earth-2 Command Center, Data Federation Mesh, and weather model 
+                microservices, enabling interactive visualization pipelines and scalable simulation environments.
+            </div>
+            <div class="image">
+                <img src="feltAI.png" width="870" height="500">
+            </div>
+            <div class="reference-text">
+                <b>3. Felt AI</b><br>
+                Cloud-native GIS platform designed to empower users to build maps, and spatial apps<br>
+                <br>
+                Automated Spatial UI Generation: Felt creates polished, responsive interfaces—buttons, 
+                popups, workflows—based on prompts. No frontend coding needed. It takes care of styling,
+                data layering, legend generation, and interaction logic—all inline with your map view.<br>
+                <br>
+                Data Integration & Scaling: Seamless connection to cloud sources:
+                Postgres, Snowflake, BigQuery, Databricks, ESRI, WFS/STAC, and more.
+                Felt also supports drag-and-drop upload of almost any spatial file
+                type—automatically geocoding or parsing geometry without manual wrangling.<br>
+                <br>
+                Dashboard & App Builder: Within the same platform you can create dashboards,
+                charts, histograms, and interactive apps, tied to real-time spatial data 
+                updates—no separate infrastructure required.
+            </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="main.js"></script>
+</body>

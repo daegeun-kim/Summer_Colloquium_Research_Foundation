@@ -1,0 +1,130 @@
+body {
+  font-family: 'Times New Roman', Times, serif;  
+  text-align: center;
+  color: #111;
+  margin: 0;      
+  min-height: 100vh;
+}
+
+header {
+  font-size: 15px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-frame {
+  width: 870px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: #bebebe solid 1px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.subframe {
+  width: 870px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: #bebebe solid 1px;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.box {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  margin-left: 30px;
+}
+
+.box1 {
+  width: 220px;
+}
+
+#LLM {
+  background-color: rgb(231, 246, 255);
+}
+#backend {
+  background-color: rgb(229, 236, 223);
+}
+#frontend {
+  background-color: rgb(250, 248, 222);
+}
+#database {
+  background-color: rgb(226, 241, 235);
+}
+#devops {
+  background-color: rgb(233, 237, 240);
+}
+#datasources {
+  background-color: rgb(247, 235, 235);
+}
+#auth {
+  background-color: rgb(230, 229, 240);
+}
+
+#history {
+  text-align: left;
+  border: #ffffff solid 1px;
+}
+.history-frame {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  line-height: 1.6;
+  gap: 50px;
+  width: 870px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+} 
+
+
+.reference-text {
+  text-align: left;
+  margin-bottom: 100px;
+  width: 870px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+
+#frame1 {
+  background-color: rgb(230, 245, 255);
+}
+
+#frame4 {
+  text-align: left;
+}
+
+button {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f3f3f3;
+  width: 205px;
+  border: 1px solid #b3b3b3;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 8px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.2);
+}
+
+footer {
+  margin-top: 200px;
+}

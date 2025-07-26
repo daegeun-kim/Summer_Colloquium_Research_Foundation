@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Summer Colloquium Research Foundation<br></h1>
+        <div class="subtitle">
+            <p>
+                Daegeun Kim
+            </p>
+        </div>
+    </header>
+            <button onclick="location.href='index.html'">Research Overview</button>
+            <button onclick="location.href='subpage1.html'">Historical Reference</button>
+            <button onclick="location.href='subpage2.html'">Potential Tools</button>
+            <button onclick="location.href='subpage3.html'">Existing Projects</button>
+    <main>
+        <div class="title">Potential Tools</div>
+        <div class="subframe", id="LLM">
+            <b><u>Large Language models</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>LLM APIs<br>
+                        Agents / Prompt Chaining<br>
+                        Function Calling / Tools API<br>
+                        Local Models</b>
+                </div>
+                <div>
+                    OpenAI (GPT‑4o), Anthropic (Claude 3), Google Gemini 1.5, Mistral (open models), LLaMA 3<br>
+                    LangChain, LlamaIndex, CrewAI<br>
+                    OpenAI Function Calling, Anthropic Tool Use<br> 
+                    Ollama (LLaMA, Mistral), LM Studio, GPT4All<br>
+                </div>
+            </div>
+        </div>
+        <div class="subframe", id="backend">
+            <b><u>Backend: Logic, Analysis, Query Generation</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>Programming Language<br>
+                        Geospatial Analysis<br>
+                        Spatial Databases<br>
+                        Data Science & ML<br>
+                        Server Framework <br>
+                        Visualization Logic</b>
+                </div>
+                <div>
+                        Python<br>
+                        GeoPandas, Shapely, Pyproj, Fiona, Rasterio, OSMnx<br>
+                        PostGIS (PostgreSQL), DuckDB + Spatial extension, SQLite + SpatiaLite<br> 
+                        Pandas, NumPy, Scikit-learn, XGBoost, TensorFlow, LightGBM<br>
+                        FastAPI, Flask<br>
+                        Folium, Pydeck, Plotly, Kepler.gl (via Python wrapper)<br>
+                </div>
+            </div>
+        </div>
+        <div class="subframe", id="frontend">
+            <b><u>Frontend: Visualization & UI</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>Web Framework / App<br>
+                        Mapping & Visualization<br>
+                        UI Components</b>
+                </div>
+                <div>
+                        Streamlit, Dash, Gradio (for rapid UI), Next.js (for production frontend)<br>
+                        Mapbox GL JS, Leaflet.js, Deck.gl, D3.js, Kepler.gl, CesiumJS (3D)<br>
+                        Shadcn/ui (React), Tailwind CSS, React Query (data fetching)<br> 
+                </div>
+            </div>
+        </div>
+        <div class="subframe" id="database">
+            <b><u>Database & Data Management</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>Relational DB<br>
+                    Cloud GIS Storage<br>
+                    Real-time / Cache</b>
+                </div>
+                <div>
+                    Supabase (PostgreSQL + storage), Firebase, PlanetScale (MySQL), Hasura (GraphQL engine)<br>
+                    Amazon S3, Google Cloud Storage, CartoDB, Datahub.io<br>
+                    Redis, SQLite (for fast local querying), DuckDB<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="subframe" id="devops">
+            <b><u>DevOps & Deployment</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>Hosting Platforms<br>
+                    Containerization<br>
+                    Serverless Functions<br>
+                    CI/CD & Versioning</b>
+                </div>
+                <div>
+                    Vercel (frontend), Railway, Render, Heroku, Fly.io<br>
+                    Docker, Docker Compose<br>
+                    Cloudflare Workers, Supabase Edge Functions, AWS Lambda<br>
+                    GitHub Actions, Git, DVC (Data Version Control for ML/GIS pipelines)<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="subframe" id="datasources">
+            <b><u>Data Sources</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>Parcel/Zoning<br>
+                    Transit<br>
+                    Building/Permits<br>
+                    OSM/Global GIS<br>
+                    Environment</b>
+                </div>
+                <div>
+                    NYC MapPLUTO, Zoning GIS Map (Zoning Map Amendment), DOF Tax Lot<br>
+                    MTA GTFS, NYC Subway Stations (Open Data), Walk Score API<br>
+                    DOB Now, HPD, NYC OpenData<br>
+                    OpenStreetMap, Overpass API, Microsoft Open Buildings, US Census TIGER/Line<br>
+                    NYC Floodplain, Urban Heat Islands, 3DEP (USGS LiDAR)<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="subframe" id="auth">
+            <b><u>Authentication & Access Control</u></b><br><br>
+            <div class="box">
+                <div class="box1">
+                    <b>Tools</b>
+                </div>
+                <div>
+                    Supabase Auth, Firebase Auth, Clerk.dev, Auth0
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="main.js"></script>
+</body>
