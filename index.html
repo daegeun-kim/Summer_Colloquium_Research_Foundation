@@ -4,97 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Foundation</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Summer Colloquium Research Foundation<br></h1>
+        <h1>AI and Geospatial Data Perception<br></h1>
         <div class="subtitle">
             <p>
-                Daegeun Kim
+                <b>Daegeun Kim</b>
             </p>
         </div>
     </header>
-            <button onclick="location.href='index.html'">Research Overview</button>
-            <button onclick="location.href='subpage1.html'">Historical Reference</button>
-            <button onclick="location.href='subpage2.html'">Potential Tools</button>
-            <button onclick="location.href='subpage3.html'">Existing Projects</button>
+            <button onclick="location.href='subpage0.html'">Detail</button>
     <main>
-        <div class="title">Research Overview</div>
-        <img src="research_proposal.png" width="890" height="500">
-        <div class="text-frame", id="frame1">
+        <video width="910" height=auto autoplay loop muted playsinline>
+            <source src="thesis_foundation.mp4" type="video/mp4">
+        </video>
+        <div class="question">
             <p>
-                <b>Research Topic: LLM and Geospatial Data Perception</b><br><br>
-                This project explores how large language models (LLMs) can be integrated with geospatial data processing
-                and machine learning to automate urban real estate analysis and visualization workflows. By developing
-                a prototype that translates natural language queries into spatial data operations and predictive insights, 
-                the project aims to advance computational methods in urban analytics while providing a foundation for future 
-                discussions on accessibility, bias, and the role of AI in planning decision-making.
+                <b>How can <span class="highlight">AI</span> reshape or enhance the experience of<br>
+                understanding, using, or exploring <span class="highlight">geospatial data</span>?</b>
             </p>
         </div>
-        <div class="text-frame", id="frame2">
+        <div class="statement">
             <p>
-                <b>Keywords</b><br><br>
-                <b>
-                Large Language Model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                GIS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Machine Learning<br><br>
-                Data Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Geospatial Data Analysis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Data Bias
-                </b>
+                This project explores how artificial intelligence (AI) can be integrated with 
+                geospatial data processing and machine learning to automate urban real estate 
+                analysis and visualization workflows. By developing a prototype that translates 
+                natural language queries into spatial data operations and predictive insights, 
+                the project aims to advance computational methods in urban analytics while 
+                providing a foundation for future discussions on accessibility, bias, and the 
+                role of AI in planning decision-making.
             </p>
         </div>
-        <div class="text-frame", id="frame3">
+        <div class="canvas">
+            <svg id="chart" width="800" height="1100"></svg>
+        </div>
+        <div class="quotes">
             <p>
-                <b>Potential Project Structure</b><br><br>
-                User inputs query in the frontend interface<br>
-                ↓<br>
-                LLM processes the query and maps it to a predefined intent<br>
-                ↓<br>
-                LLM generates structured code or a filter specification<br>
-                ↓<br>
-                Query specification is sent to the backend API<br>
-                ↓<br>
-                Backend matches it to preprocessed, machine learned datasets<br>
-                ↓<br>
-                Backend applies spatial filters, joins, or other processes on the data<br>
-                ↓<br>
-                Output data is formatted into necessary file such as GeoJSON<br>
-                ↓<br>
-                Visualization parameters are auto-configured<br>
-                ↓<br>
-                Frontend receives the data and visualization instructions<br>
-                ↓<br>
-                Frontend renders interactive maps and charts using JS libraries<br>
-                ↓<br>
-                Visual output and summary are displayed to the user
+                Ben Shneiderman - Human-Centered AI<br>
+                “The future is not AI versus humans. The future is AI with humans, working together.”<br>
+                <br>
+                Kate Crawford - Algorithmic Bias<br>
+                “Biases and blind spots exist in big data … Yet there is a problematic belief that 
+                bigger data is always better data and that correlation is as good as causation.”<br>
+                <br>
+                Donna Haraway - Situated Knowledges<br>
+                “Situated knowledges … allows us to become answerable for what we learn how to see.”
             </p>
         </div>
-        <div class="text-frame", id="frame4">
+        <div class="canvas2-title">
+            <div id="canvas2-col1"><img src="col1.png" alt="col1 icon" style="width:100%;display:block;margin:0 0 25px 0;padding:0;">Geometry Data (shp, geojson)</div>
+            <div id="canvas2-col2"><img src="col2.png" alt="col2 icon" style="width:100%;display:block;margin:0 0 25px 0;padding:0;">Feature Data (csv)</div>
+            <div id="canvas2-col3"><img src="col3.jpg" alt="col3 icon" style="width:100%;display:block;margin:0 0 25px 0;padding:0;">Analytical Models (python)</div>
+            <div id="canvas2-col4"><img src="col4.png" alt="col4 icon" style="width:100%;display:block;margin:0 0 25px 0;padding:0;">Visualization Script (js)</div>
+        </div>
+        <div class="query">
+            <p><b>"Compare building height and property value in NYC flood zones."</b></p>
+        </div>
+        <div class="canvas2">
+            <svg id="chart2" width="1000" height="400"></svg>
+        </div>
+        <div class="text-frame">
             <p>
-                <ul>
-                <b>Issues Being Addressed</b><br>
-                </ul>
-                <ul>
-                Data Bias in Urban Analytics:
-                <li>Geospatial datasets often reflect systemic inequalities (e.g., historic redlining, zoning exclusions)</li>
-                <li>ML models may unintentionally reinforce these biases without interpretability or safeguards</li>
-                <br>
-                Democratization of Urban Data Access:
-                <li>Planning and real estate data is publicly available but technically inaccessible to most citizens</li>
-                <li>Your natural-language LLM interface lowers the barrier to understanding complex datasets (e.g., FAR, zoning, lot area, subway access)</li>
-                <br>
-                Information Asymmetry in Real Estate Markets:
-                <li>Large developers use proprietary data tools to make decisions—others rely on intuition or incomplete data</li>
-                <br>
-                Accountability in Zoning and Land Use:
-                <li>Visualization of zoning vs. actual built form reveals where land is underbuilt or underregulated</li>
-                </ul>
+                <b>Exploring AI Method of Geospatial Data Interpretation</b><br><br>
+                <li>Query-to-Result Tool</li>
+                <li>Text Summarization / Report Generator</li>
+                <li>Code Generator / Assistant</li>
+                <li>Semantic Search Engine</li>
+                <li>Map Interaction Enhancer</li>
+                <li>Form Auto-Filler or Document Generator</li>
+                <li>Insight Recommendation System</li>
             </p>
         </div>
     </main>
     <footer>
     </footer>
     <script src="main.js"></script>
+    <script src="keyword.js"></script>
+    <script src="nodeLink.js"></script>
 </body>

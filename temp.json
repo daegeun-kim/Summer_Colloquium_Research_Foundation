@@ -1,0 +1,1160 @@
+{
+    "nodes": [
+        { "id": "NYC building", "group": "geometry Data (shp, geojson)" },
+        { "id": "NYC lot", "group": "geometry Data (shp, geojson)" },
+        { "id": "NYC subway lines", "group": "geometry Data (shp, geojson)" },
+        { "id": "NYC flood zones", "group": "geometry Data (shp, geojson)" },
+        { "id": "NYC zoning districts", "group": "geometry Data (shp, geojson)" },
+        { "id": "NYC land use polygons", "group": "geometry Data (shp, geojson)" },
+        { "id": "NYC census tracts", "group": "geometry Data (shp, geojson)" },
+        { "id": "Street centerlines", "group": "geometry Data (shp, geojson)" },
+
+        { "id": "building height", "group": "property Data (csv)" },
+        { "id": "lot area", "group": "property Data (csv)" },
+        { "id": "property value", "group": "property Data (csv)" },
+        { "id": "building elevation", "group": "property Data (csv)" },
+        { "id": "year built", "group": "property Data (csv)" },
+        { "id": "number of units", "group": "property Data (csv)" },
+        { "id": "land use code", "group": "property Data (csv)" },
+        { "id": "energy usage", "group": "property Data (csv)" },
+        { "id": "distance to subway", "group": "property Data (csv)" },
+        { "id": "assessed value", "group": "property Data (csv)" },
+
+        { "id": "K-mean clustering", "group": "Analytical Models (python)" },
+        { "id": "Linear regression", "group": "Analytical Models (python)" },
+        { "id": "Decision tree classifier", "group": "Analytical Models (python)" },
+        { "id": "Random forest regressor", "group": "Analytical Models (python)" },
+        { "id": "GWR (Geographically Weighted Regression)", "group": "Analytical Models (python)" },
+        { "id": "PCA (Principal Component Analysis)", "group": "Analytical Models (python)" },
+        { "id": "DBSCAN clustering", "group": "Analytical Models (python)" },
+        { "id": "Spatial join & overlay", "group": "Analytical Models (python)" },
+        { "id": "Zonal statistics", "group": "Analytical Models (python)" },
+
+        { "id": "location map", "group": "Visualization Script (js)" },
+        { "id": "heatmap", "group": "Visualization Script (js)" },
+        { "id": "line chart", "group": "Visualization Script (js)" },
+        { "id": "bar chart", "group": "Visualization Script (js)" },
+        { "id": "pie chart", "group": "Visualization Script (js)" },
+        { "id": "treemap", "group": "Visualization Script (js)" },
+        { "id": "histogram", "group": "Visualization Script (js)" },
+        { "id": "bivariate choropleth map", "group": "Visualization Script (js)" },
+        { "id": "bubble map", "group": "Visualization Script (js)" },
+        { "id": "3D extruded map", "group": "Visualization Script (js)" },
+        { "id": "radar chart", "group": "Visualization Script (js)" },
+        { "id": "animated timeseries map", "group": "Visualization Script (js)" }
+    ],
+    "links": [
+        {
+        "source": "NYC building",
+        "target": "building height"
+        },
+        {
+        "source": "NYC building",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC building",
+        "target": "property value"
+        },
+        {
+        "source": "NYC building",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC building",
+        "target": "year built"
+        },
+        {
+        "source": "NYC building",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC building",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC building",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC building",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC building",
+        "target": "assessed value"
+        },
+        {
+        "source": "NYC lot",
+        "target": "building height"
+        },
+        {
+        "source": "NYC lot",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC lot",
+        "target": "property value"
+        },
+        {
+        "source": "NYC lot",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC lot",
+        "target": "year built"
+        },
+        {
+        "source": "NYC lot",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC lot",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC lot",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC lot",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC lot",
+        "target": "assessed value"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "building height"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "property value"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "year built"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC subway lines",
+        "target": "assessed value"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "building height"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "property value"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "year built"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC flood zones",
+        "target": "assessed value"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "building height"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "property value"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "year built"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC zoning districts",
+        "target": "assessed value"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "building height"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "property value"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "year built"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC land use polygons",
+        "target": "assessed value"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "building height"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "lot area"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "property value"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "building elevation"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "year built"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "number of units"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "land use code"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "energy usage"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "distance to subway"
+        },
+        {
+        "source": "NYC census tracts",
+        "target": "assessed value"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "building height"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "lot area"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "property value"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "building elevation"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "year built"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "number of units"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "land use code"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "energy usage"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "distance to subway"
+        },
+        {
+        "source": "Street centerlines",
+        "target": "assessed value"
+        },
+        {
+        "source": "building height",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "building height",
+        "target": "Linear regression"
+        },
+        {
+        "source": "building height",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "building height",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "building height",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "building height",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "building height",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "building height",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "building height",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "lot area",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "lot area",
+        "target": "Linear regression"
+        },
+        {
+        "source": "lot area",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "lot area",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "lot area",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "lot area",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "lot area",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "lot area",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "lot area",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "property value",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "property value",
+        "target": "Linear regression"
+        },
+        {
+        "source": "property value",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "property value",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "property value",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "property value",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "property value",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "property value",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "property value",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "building elevation",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "building elevation",
+        "target": "Linear regression"
+        },
+        {
+        "source": "building elevation",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "building elevation",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "building elevation",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "building elevation",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "building elevation",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "building elevation",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "building elevation",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "year built",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "year built",
+        "target": "Linear regression"
+        },
+        {
+        "source": "year built",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "year built",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "year built",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "year built",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "year built",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "year built",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "year built",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "number of units",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "number of units",
+        "target": "Linear regression"
+        },
+        {
+        "source": "number of units",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "number of units",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "number of units",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "number of units",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "number of units",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "number of units",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "number of units",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "land use code",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "land use code",
+        "target": "Linear regression"
+        },
+        {
+        "source": "land use code",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "land use code",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "land use code",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "land use code",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "land use code",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "land use code",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "land use code",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "energy usage",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "energy usage",
+        "target": "Linear regression"
+        },
+        {
+        "source": "energy usage",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "energy usage",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "energy usage",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "energy usage",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "energy usage",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "energy usage",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "energy usage",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "distance to subway",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "distance to subway",
+        "target": "Linear regression"
+        },
+        {
+        "source": "distance to subway",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "distance to subway",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "distance to subway",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "distance to subway",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "distance to subway",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "distance to subway",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "distance to subway",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "assessed value",
+        "target": "K-mean clustering"
+        },
+        {
+        "source": "assessed value",
+        "target": "Linear regression"
+        },
+        {
+        "source": "assessed value",
+        "target": "Decision tree classifier"
+        },
+        {
+        "source": "assessed value",
+        "target": "Random forest regressor"
+        },
+        {
+        "source": "assessed value",
+        "target": "GWR (Geographically Weighted Regression)"
+        },
+        {
+        "source": "assessed value",
+        "target": "PCA (Principal Component Analysis)"
+        },
+        {
+        "source": "assessed value",
+        "target": "DBSCAN clustering"
+        },
+        {
+        "source": "assessed value",
+        "target": "Spatial join & overlay"
+        },
+        {
+        "source": "assessed value",
+        "target": "Zonal statistics"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "location map"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "heatmap"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "line chart"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "bar chart"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "pie chart"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "treemap"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "histogram"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "bubble map"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "radar chart"
+        },
+        {
+        "source": "K-mean clustering",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "Linear regression",
+        "target": "location map"
+        },
+        {
+        "source": "Linear regression",
+        "target": "heatmap"
+        },
+        {
+        "source": "Linear regression",
+        "target": "line chart"
+        },
+        {
+        "source": "Linear regression",
+        "target": "bar chart"
+        },
+        {
+        "source": "Linear regression",
+        "target": "pie chart"
+        },
+        {
+        "source": "Linear regression",
+        "target": "treemap"
+        },
+        {
+        "source": "Linear regression",
+        "target": "histogram"
+        },
+        {
+        "source": "Linear regression",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "Linear regression",
+        "target": "bubble map"
+        },
+        {
+        "source": "Linear regression",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "Linear regression",
+        "target": "radar chart"
+        },
+        {
+        "source": "Linear regression",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "location map"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "heatmap"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "line chart"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "bar chart"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "pie chart"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "treemap"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "histogram"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "bubble map"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "radar chart"
+        },
+        {
+        "source": "Decision tree classifier",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "location map"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "heatmap"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "line chart"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "bar chart"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "pie chart"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "treemap"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "histogram"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "bubble map"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "radar chart"
+        },
+        {
+        "source": "Random forest regressor",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "location map"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "heatmap"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "line chart"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "bar chart"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "pie chart"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "treemap"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "histogram"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "bubble map"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "radar chart"
+        },
+        {
+        "source": "GWR (Geographically Weighted Regression)",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "location map"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "heatmap"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "line chart"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "bar chart"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "pie chart"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "treemap"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "histogram"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "bubble map"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "radar chart"
+        },
+        {
+        "source": "PCA (Principal Component Analysis)",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "location map"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "heatmap"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "line chart"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "bar chart"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "pie chart"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "treemap"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "histogram"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "bubble map"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "radar chart"
+        },
+        {
+        "source": "DBSCAN clustering",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "location map"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "heatmap"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "line chart"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "bar chart"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "pie chart"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "treemap"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "histogram"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "bubble map"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "radar chart"
+        },
+        {
+        "source": "Spatial join & overlay",
+        "target": "animated timeseries map"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "location map"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "heatmap"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "line chart"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "bar chart"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "pie chart"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "treemap"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "histogram"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "bivariate choropleth map"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "bubble map"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "3D extruded map"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "radar chart"
+        },
+        {
+        "source": "Zonal statistics",
+        "target": "animated timeseries map"
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+body {
+  font-family: 'Helvetica', Arial, sans-serif;  
+  text-align: center;
+  color: #111;
+  margin: 0;      
+  min-height: 100vh;
+}
+
+header {
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  letter-spacing: -5px;
+  font-size: 3rem;
+  margin-top: 16rem;
+  margin-bottom: 60px;
+}
+.subtitle {
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  letter-spacing: -1px;
+  font-size: 30px;
+  margin-bottom: 20px;
+} 
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-frame {
+  width: 870px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.7;
+}
+.subframe {
+  width: 870px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: #bebebe solid 1px;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.question {
+  font-size: 3rem;
+  margin: 10%;
+  margin-top: 400px;
+  margin-bottom: 100px;
+}
+.highlight {
+  color: #ff0000;
+  font-weight: bold;
+}
+.statement {
+  font-size: 1.2rem;
+  margin: auto;
+  margin-bottom: 400px;
+  width:70%;
+  padding: 10px;
+  color: #8a8a8a;
+  line-height: 1.6;
+}
+
+#chart {
+  width: 70%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.canvas {
+  width: 100%;
+  margin: 50 auto;
+  text-align: center;
+}
+
+#frame4 {
+  text-align: left;
+}
+
+button {
+  font-family: 'Helvetica', Arial, serif;
+  background-color: #ffffff;
+  width: 205px;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 8px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.2);
+}
+
+.quotes {
+  width: 870px;
+  margin: 20px auto;
+  margin-bottom: 400px;
+  padding: 10px;
+  font-size: 40px;
+  text-align: left;
+  line-height: 1.7;
+  font-family: 'impact', sans-serif;
+}
+
+.canvas2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  margin-top: 0;
+}
+
+.canvas2-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  margin: 0 auto 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  gap: 120px;
+}
+
+#chart2 {
+  width: 90%; /* or any fixed width you want */
+  height: auto;
+}
+
+#canvas2-col1, #canvas2-col2, #canvas2-col3, #canvas2-col4 {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.query {
+  font-size: 1rem;
+  width: 33%;
+  margin: 20px auto;
+  margin-top: 50px;
+  border: #bebebe solid 1px;
+  border-radius: 20px;
+  background-color: rgba(141, 141, 141, 0.2);
+}
+
+footer {
+  margin-top: 200px;
+}
