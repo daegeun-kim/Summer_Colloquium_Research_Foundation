@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Helvetica', Arial, sans-serif;  
   text-align: center;
@@ -108,6 +109,33 @@ button {
   text-align: left;
   line-height: 1.7;
   font-family: 'impact', sans-serif;
+}
+
+/* Arrange history-frame in 2x2 grid */
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 40px;
+  width: 60%;
+  margin: 40px auto 40px auto;
+  margin-bottom: 500px;
+}
+
+.history-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  min-width: 0;
+}
+
+.history-frame .image {
+  margin-bottom: 16px;
+}
+
+.history-text {
+  text-align: left;
+  font-size: 1rem;
 }
 
 .canvas2 {
