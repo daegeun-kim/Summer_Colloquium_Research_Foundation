@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         currentIndex++;
         if (currentIndex >= scrollPercents.length) {
-            currentIndex = scrollPercents.length - 1; // Or reset to 0 to loop
+            currentIndex = 0; // loop back to the first scroll point
         }
 
         const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
