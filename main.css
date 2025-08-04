@@ -111,6 +111,11 @@ button {
   font-family: 'impact', sans-serif;
 }
 
+
+.lineage {
+  font-size: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+}
 /* Arrange history-frame in 2x2 grid */
 .history {
   display: grid;
@@ -118,7 +123,7 @@ button {
   gap: 40px 40px;
   width: 50%;
   margin: 40px auto 40px auto;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 
 .history-frame {
@@ -136,6 +141,62 @@ button {
 .history-text {
   text-align: left;
   font-size: 1rem;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 60vw;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto; /* <-- centers the slider horizontally */
+    margin-bottom: 400px;
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.slide-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 300vw; /* 5 slides */
+}
+.slide {
+    width: 60vw;
+    height: 75vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 2rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+}
+#prevBtn {
+    left: 0;
+}
+#nextBtn {
+    right: 0;
+}
+
+.proposal {
+  font-size: 40px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .canvas2 {

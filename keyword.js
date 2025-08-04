@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {id: "Urban Data Democratization", group: 3, x: 686, y: 359, fx: 686, fy: 359},
     {id: "Digital Equity", group: 5, x: 681, y: 451, fx: 681, fy: 451},
     {id: "Environmental Justice", group: 5, x: 863, y: 519, fx: 863, fy: 519},
-    {id: "Spatial AI", group: 5, x: 983, y: 642, fx: 983, fy: 642},
+    {id: "Spatial AI", group: 5, x: 953, y: 642, fx: 983, fy: 642},
     {id: "Natural Language Interface", group: 5, x: 874, y: 772, fx: 874, fy: 772},
     {id: "Participatory Mapping", group: 5, x: 659, y: 855, fx: 659, fy: 855},
     {id: "Algorithmic Fairness", group: 5, x: 416, y: 853, fx: 416, fy: 853},
