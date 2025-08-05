@@ -48,7 +48,7 @@ header {
   font-size: 3rem;
   margin: 10%;
   margin-top: 400px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .highlight {
   color: #ff0000;
@@ -58,7 +58,7 @@ header {
   font-size: 1.2rem;
   margin: auto;
   margin-bottom: 400px;
-  width:70%;
+  width: 75%;
   padding: 10px;
   color: #8a8a8a;
   line-height: 1.6;

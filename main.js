@@ -18,7 +18,7 @@ function updateSlide() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const scrollPercents = [0, 0.15, 0.31, 0.44, 0.58, 0.66, 0.79, 0.93, 0.99]; // 0% to 80% of total scrollable height
+  const scrollPercents = [0, 0.14, 0.28, 0.40, 0.53, 0.60, 0.71, 0.83, 0.89, 0.98]; // 0% to 80% of total scrollable height
     let currentIndex = 0;
 
     document.addEventListener("keydown", function (e) {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const scrollPercents = [0, 0.15, 0.31, 0.44, 0.58, 0.66, 0.79, 0.93, 0.99];
+  const scrollPercents = [0, 0.14, 0.28, 0.40, 0.53, 0.60, 0.71, 0.83, 0.89, 0.98];
   const dotNav = document.getElementById("dot-nav");
 
   scrollPercents.forEach((percent, index) => {
