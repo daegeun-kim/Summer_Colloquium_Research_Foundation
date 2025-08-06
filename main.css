@@ -263,7 +263,7 @@ footer {
   top: 0;
   left: 50%;
   width: 2px;
-  height: 98%;
+  height: 99%;
   background-color: #ccc;
   transform: translateX(-50%);
   z-index: 0;
@@ -285,4 +285,3 @@ footer {
 .dot.active {
   background-color: #333;
 }
-
